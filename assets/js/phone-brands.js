@@ -23,7 +23,7 @@
         colors: ["#c4c4c4", "#69b40f", "#ec1d25", "#c8125c", "#008fc8", "#10218b", "#134b24", "#737373"]
     });
 
-    const width = 928;
+    const width = 640;
     const height = width;
     const { names, colors } = data;
     const outerRadius = Math.min(width, height) * 0.5 - 60;
@@ -51,7 +51,7 @@
         .attr("width", width)
         .attr("height", height)
         .attr("viewBox", [-width / 2, -height / 2, width, height])
-        .attr("style", "width: 100%; height: auto; font: 10px sans-serif;");
+        .attr("style", "max-width: 100%; height: auto; font: 10px sans-serif;");
 
     const chords = chord(data);
 
